@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "http://localhost/laravel/queensthings/public/api/product",
+        "secure": false,
+        "changeOrigin": true
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "qtscan",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+  
+}
+
+
+

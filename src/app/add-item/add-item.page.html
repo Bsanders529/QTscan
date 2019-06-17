@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+<div>
+
+  <form [formGroup]="itemForm" (ngSubmit)="onFormSubmit(itemForm.value)">
+      <ion-button block (click)="scanCode()">Scan UPC</ion-button>
+
+      <ion-item>
+          <ion-label>Name</ion-label>
+          <ion-input formControlName="item_name"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+            <ion-label>Brand</ion-label>
+            <ion-input  formControlName="item_brand"></ion-input>
+          </ion-item>
+
+        <ion-item>
+          <ion-label>Company</ion-label>
+          <ion-input  formControlName="item_company"></ion-input>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Color</ion-label>
+          <ion-input  formControlName="item_color"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Description</ion-label>
+          <ion-textarea formControlName="item_description"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Dimensions</ion-label>
+          <ion-textarea formControlName="item_dimensions"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+          <ion-label>Size</ion-label>
+          <ion-textarea formControlName="item_size"></ion-textarea>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Weight</ion-label>
+            <ion-input formControlName="item_weight"></ion-input>
+          </ion-item>
+  
+
+    <ion-button type="submit" shape="round" color="primary" expand="block">Submit</ion-button>
+</form>
+
+</div>
+
+
+</ion-content>

@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let p of data">
+    <h3>UPC:{{p.upc}} , Name:{{p.name}} , Brand:{{p.brand}}, Company:{{p.company}}, Weight: {{p.weight}} , Dimensions: {{p.dimensions}} , Size: {{p.size}} </h3>
+  </ion-card>
+</ion-content>
